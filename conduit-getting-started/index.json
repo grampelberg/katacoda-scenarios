@@ -25,7 +25,8 @@
     },
     "assets": {
       "host01": [
-        {"file": "dashboard.sh", "target": "~/", "chmod": "+x"}
+        {"file": "dashboard.sh", "target": "~/", "chmod": "+x"},
+        {"file": "emojivoto.sh", "target": "~/", "chmod": "+x"}
       ]
     }
   },
