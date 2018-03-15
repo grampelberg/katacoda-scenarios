@@ -25,7 +25,8 @@
     },
     "assets": {
       "host01": [
-        {"file": "dashboard.sh", "target": "~/", "chmod": "+x"}
+        {"file": "start-dashboard.sh", "target": "~/", "chmod": "+x"},
+        {"file": "view-dashboard.sh", "target": "~/", "chmod": "+x"},
       ]
     }
   },
