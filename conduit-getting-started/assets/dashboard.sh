@@ -7,6 +7,7 @@ curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip 2> /dev/n
 start-stop-daemon --status --pidfile /tmp/dashboard.pid
 
 if [ $? -ne 0 ]; then
+  # TODO: wait until running
   start-stop-daemon \
     --background \
     --make-pidfile \
@@ -29,10 +30,10 @@ if [ $? -ne 0 ]; then
   sleep 3
 fi
 
-echo "The dashboard is available at:\n"
+printf "The dashboard is available at:\n\n"
 
 echo $(cat ngrok.log \
   | sed -n 's/.* URL:\([^ ]*\) .*/\1/p' \
   | head -n1)"/api/v1/namespaces/conduit/services/web:http/proxy/"
 
-echo "\ncut and paste this URL into your browser."
+printf "\ncut and paste this URL into your browser.\n"
