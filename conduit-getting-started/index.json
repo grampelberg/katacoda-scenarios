@@ -12,7 +12,7 @@
       "text": "setup-conduit-cli.md"
     }, {
       "title": "Step 3 - Setup Control Plane",
-      "text": "demo-control-plane.md"
+      "text": "setup-control-plane.md"
     }, {
       "title": "Step 4 - Install the demo app",
       "text": "demo-app.md"
