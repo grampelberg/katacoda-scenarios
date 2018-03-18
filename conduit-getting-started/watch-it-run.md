@@ -1,10 +1,10 @@
 If you glance at the Conduit dashboard, you should see all the HTTP/2 and HTTP/1-speaking services in the demo app show up in the list of deployments that have been added to the Conduit mesh.
 
-View the demo app by visiting the web service’s public IP:
+View the demo app by starting up a tunnel to it:
 
-`minikube -n emojivoto service web-svc --url`{{execute}}
+`./tunnel-emojivoto.sh`{{execute}}
 
-Finally, let’s take a look back at our dashboard (run conduit dashboard if you haven’t already). You should be able to browse all the services that are running as part of the application to view:
+Finally, let’s take a look back at our dashboard (you can get the URL to it again by running `./tunnel-dashboard.sh`. You should be able to browse all the services that are running as part of the application to view:
 
 - Success rates
 - Request rates
@@ -13,7 +13,7 @@ Finally, let’s take a look back at our dashboard (run conduit dashboard if you
 
 As well as various other bits of information about live traffic. Neat, huh?
 
-Views available in `conduit dashboard`:
+Views available in the dashboard:
 
 SERVICE MESH
 

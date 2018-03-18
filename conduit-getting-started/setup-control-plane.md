@@ -4,14 +4,18 @@ Now that you have the CLI running locally, it’s time to install the Conduit co
 
 This generates a Kubernetes config, and pipes it to kubectl. Kubectl then applies the config to your Kubernetes cluster.
 
-To verify the Conduit server version, run:
+Let's wait until everything is up and running. An easy way to do that is:
+
+`watch kubectl --namespace=conduit get po -l conduit.io/control-plane-ns=conduit`{{execute}}
+
+Once all the pods started are ready, it is possible to also view the Conduit server's version:
 
 `conduit version`{{execute}}
 
-Normally, you'd use `conduit dashboard` to view the GUI. Because this tutorial is running in Katacoda, we need to do a little extra work. Run:
+At this point you'd normally use `conduit dashboard`. Because this tutorial is running in Katacoda, we need to do a little extra work. Run:
 
-`/root/dashboard.sh`{{execute}}
+`./tunnel-dashboard.sh`{{execute}}
 
 This will start the dashboard and setup a tunnel for you to view it from. Cut and paste the URL that is output into your browser.
 
-Of course, you haven’t actually added any services to the mesh yet, so the dashboard won’t have much to display beyond the status of the service mesh itself.
+You've not added any services to the mesh yet, so the dashboard won’t have much to display beyond the status of the service mesh itself. Let's run something!
