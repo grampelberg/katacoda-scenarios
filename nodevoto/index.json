@@ -29,7 +29,8 @@
     "assets": {
       "host01": [
         {"file": "tunnel-dashboard.sh", "target": "~/", "chmod": "+x"},
-        {"file": "tunnel-emojivoto.sh", "target": "~/", "chmod": "+x"}
+        {"file": "tunnel-emojivoto.sh", "target": "~/", "chmod": "+x"},
+        {"file": "wait-for-start.sh", "target": "~/", "chmod": "+x"}
       ]
     }
   },
