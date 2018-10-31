@@ -52,6 +52,8 @@ do that, run:
 
 `kubectl -n linkerd port-forward svc/web 9092:8084 > /dev/null &`{{execute}}
 
+Then, you can [view the dashboard](https://[[HOST_SUBDOMAIN]]-9093-[[KATACODA_HOST]].environments.katacoda.com).
+
 Note: normally, you'd just run `linkerd dashboard` to pull this up. We need to
 do something a little special in this sandbox.
 

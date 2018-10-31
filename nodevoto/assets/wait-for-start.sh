@@ -7,5 +7,6 @@ do
   printf "."
 done
 
+sleep 2
 echo ""
 echo "Kubernetes Started"
