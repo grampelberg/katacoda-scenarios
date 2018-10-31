@@ -1,8 +1,14 @@
-Finally, it’s time to install a demo application and add it to the service mesh.
+To get started, let's install the demo app on your cluster:
 
-Fetch the demo, add conduit to it and apply to your cluster:
+`curl https://run.linkerd.io/nodevoto.yml | kubectl apply -f -`{{execute}}
 
-`wget  https://raw.githubusercontent.com/runconduit/conduit-examples/master/emojivoto/emojivoto.yml`{{execute}}
+This command fetches the Kubrernetes config for an example application that
+allows voting for gifs. Take a look at what's running with:
+
+`kubectl -n nodevoto get all`{{execute}}
+
+<img align="right" src="https://conduit.io/images/conduit-primary-white.svg" />
+
 
 `cat emojivoto.yml | conduit inject - > conduit-emojivoto.yml`{{execute}}
 

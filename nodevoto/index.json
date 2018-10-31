@@ -5,9 +5,9 @@
   "time": "10 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Start the app",
+      "title": "Step 1 - Install the demo app",
       "code": "foreground.sh",
-      "text": "setup-cluster.md"
+      "text": "demo-app.md"
     }, {
       "title": "Step 2 - Setup Conduit CLI",
       "text": "setup-conduit-cli.md"
