@@ -3,7 +3,13 @@ To get started, let's install the demo app on your cluster:
 `curl https://run.linkerd.io/nodevoto.yml | kubectl apply -f -`{{execute}}
 
 This command fetches the Kubrernetes config for an example application that
-allows voting for gifs. Take a look at what's running with:
+allows voting for gifs.
+
+First, let's wait until everything is running. You can do that with:
+
+`kubectl -n nodevoto rollout status deploy/web`{{execute}}
+
+Once this has returned, you can look at what is running with:
 
 `kubectl -n nodevoto get all`{{execute}}
 
@@ -14,20 +20,8 @@ The topology looks like this:
 There's a traffic generator (vote-bot), a web frontend (web), a backend to
 record votes (voting) and an index of gifs (gif).
 
+To take a look at your new gif voting application, run:
 
+`kubectl -n nodevoto port-forward svc/web-svc 9090:80 > /dev/null &`{{execute}}
 
-`cat emojivoto.yml | conduit inject - > conduit-emojivoto.yml`{{execute}}
-
-`cat conduit-emojivoto.yml | kubectl apply -f -`{{execute}}
-
-These commands download the Kubernetes config for an example gRPC application where users can vote for their favorite emoji, then runs the config through `conduit inject`. The config has the Conduit data plane proxies injected as sidecar containers in the demo's pods. `kubectl` takes care of applying this configuration to your cluster.
-
-As with `conduit install`, in this command, the Conduit CLI is simply doing text transformations, with `kubectl` doing the heavy lifting of actually applying config to the Kubernetes cluster.
-
-The pattern of injecting conduit's configuration in this matter is convenient because you can introduce additional filters into the pipeline, or run the commands separately and inspect the output of each one.
-
-Take a look at what's actually happening by running a diff on the before and after:
-
-`git diff --no-index -- emojivoto.yml conduit-emojivoto.yml`{{execute}}
-
-At this point, you should have an application running on your Kubernetes cluster, and (unbeknownst to it!) also added to the Conduit service mesh.
+Then you can [open nodevoto](https://[[HOST_SUBDOMAIN]]-9091-[[KATACODA_HOST]].environments.katacoda.com/) and see what's going on in your browser. Try clicking on the first gif to vote for it and see what happens!

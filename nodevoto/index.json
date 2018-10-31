@@ -40,7 +40,10 @@
   "icon": "fa-bug",
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "foobar", "port": 8080}],
+    "dashboards": [
+      {"name": "nodevoto", "port": 9091},
+      {"name": "dashboard", "port": 9093}
+    ],
     "uilayout": "terminal",
     "hidefinish": false
   },
