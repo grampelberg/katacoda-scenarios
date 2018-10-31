@@ -7,7 +7,7 @@ allows voting for gifs. Take a look at what's running with:
 
 `kubectl -n nodevoto get all`{{execute}}
 
-<img align="right" src="https://conduit.io/images/conduit-primary-white.svg" />
+<img align="center" src="https://linkerd.io/images/topology.svg" />
 
 
 `cat emojivoto.yml | conduit inject - > conduit-emojivoto.yml`{{execute}}

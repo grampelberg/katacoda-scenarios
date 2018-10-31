@@ -1,0 +1,5 @@
+digraph G {
+  "vote-bot" -> "web"
+  "web" -> "gif"
+  "web" -> "voting"
+}
