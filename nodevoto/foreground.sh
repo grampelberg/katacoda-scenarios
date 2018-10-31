@@ -1,1 +1,1 @@
-sleep 1; wait-for-start.sh
+./wait-for-start.sh
