@@ -7,14 +7,13 @@ curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip 2> /dev/n
 start-stop-daemon --status --pidfile /tmp/dashboard.pid
 
 if [ $? -ne 0 ]; then
-  # TODO: wait until running
   start-stop-daemon \
     --background \
     --make-pidfile \
     --pidfile /tmp/dashboard.pid \
     -S \
     --startas /bin/bash \
-    -- -c "exec $(pwd)/.conduit/bin/conduit dashboard --port 8080 --url &> /root/dashboard.log"
+    -- -c "exec linkerd dashboard --port 8080 --show url --wait &> /root/dashboard.log"
 fi
 
 start-stop-daemon --status --pidfile /tmp/ngrok-dashboard.pid
@@ -34,6 +33,6 @@ printf "The dashboard is available at:\n\n"
 
 echo $(cat ngrok.log \
   | sed -n 's/.* URL:\([^ ]*\) .*/\1/p' \
-  | head -n1)"/api/v1/namespaces/conduit/services/web:http/proxy/"
+  | head -n1)"/api/v1/namespaces/linkerd/services/web:http/proxy/"
 
 printf "\ncut and paste this URL into your browser.\n"

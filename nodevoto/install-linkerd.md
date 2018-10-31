@@ -47,14 +47,9 @@ that everything’s happening correctly by running:
 
 `linkerd check`{{execute}}
 
-With a fully operational control plane, it is possible to view the dashboard. To
-do that, run:
+At this point, you'd normally run `linkerd dashboard`. Because this tutorial is
+running in Katacoda, we need to do a little extra work. Run:
 
-`kubectl -n linkerd port-forward svc/web 9092:8084 > /dev/null &`{{execute}}
-
-Then, you can [view the dashboard](https://[[HOST_SUBDOMAIN]]-9093-[[KATACODA_HOST]].environments.katacoda.com).
-
-Note: normally, you'd just run `linkerd dashboard` to pull this up. We need to
-do something a little special in this sandbox.
+`./expose-dashboard.sh`{{execute}}
 
 Next up: looking at what is going on with the gif voting application!

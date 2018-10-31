@@ -27,8 +27,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "tunnel-dashboard.sh", "target": "~/", "chmod": "+x"},
-        {"file": "tunnel-emojivoto.sh", "target": "~/", "chmod": "+x"},
+        {"file": "expose-dashboard.sh", "target": "~/", "chmod": "+x"},
         {"file": "wait-for-start.sh", "target": "~/", "chmod": "+x"},
         {"file": "socat.sh", "target": "~/", "chmod": "+x"}
       ]
@@ -38,8 +37,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [
-      {"name": "nodevoto", "port": 9091},
-      {"name": "dashboard", "port": 9093}
+      {"name": "nodevoto", "port": 9091}
     ],
     "uilayout": "terminal",
     "hidefinish": false
