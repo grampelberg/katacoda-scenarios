@@ -1,11 +1,12 @@
 {
-  "title": "Linkerd - Debugging Node Services in Kubernetes",
-  "description": "Node is one of the most popular languages for microservices. Increasingly, those services are deployed in a Kubernetes cluster. While Kubernetes can automatically keep your service up in the event of node failure or a software crash, it doesn’t actually know whether your service is behavior correctly.. In fact, a service may be returning 500’s or taking too long to respond and the Kubernetes  dashboard will show all green lights with no signs of problems!\nn this tutorial, we’ll walk you through how to monitor and troubleshoots these sorts of problems on your Node services running in Kubernetes cluster in a matter seconds using Linkerd.",
+  "title": "Linkerd",
+  "description": "Debugging Node Services in Kubernetes",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Start the app",
+      "code": "wait-for-start.sh",
       "text": "setup-cluster.md"
     }, {
       "title": "Step 2 - Setup Conduit CLI",
@@ -39,7 +40,6 @@
     "hidefinish": false
   },
   "backend": {
-    "port": 30000,
-    "dockerimage": "minikube"
+    "dockerimage": "kubernetes"
   }
 }
