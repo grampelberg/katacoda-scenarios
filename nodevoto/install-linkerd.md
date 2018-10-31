@@ -52,4 +52,7 @@ running in Katacoda, we need to do a little extra work. Run:
 
 `./expose-dashboard.sh`{{execute}}
 
+This will start the dashboard and setup a tunnel for you to view it from. Cut
+and paste the URL that is output into your browser.
+
 Next up: looking at what is going on with the gif voting application!
