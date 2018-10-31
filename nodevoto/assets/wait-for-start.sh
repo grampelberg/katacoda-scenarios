@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting Kubernetes, please wait ..."
+echo "Waiting for Kubernetes ..."
 while [ `docker ps | wc -l` -eq 1 ]
 do
   sleep 1
