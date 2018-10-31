@@ -37,10 +37,13 @@
   },
   "icon": "fa-bug",
   "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "foobar", "port": 8080}],
     "uilayout": "terminal",
     "hidefinish": false
   },
   "backend": {
+    "port": 8080,
     "imageid": "kubernetes"
   }
 }

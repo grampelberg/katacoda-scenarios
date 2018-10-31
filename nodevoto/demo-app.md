@@ -7,7 +7,13 @@ allows voting for gifs. Take a look at what's running with:
 
 `kubectl -n nodevoto get all`{{execute}}
 
+The topology looks like this:
+
 <img align="center" src="https://linkerd.io/images/topology.svg" />
+
+There's a traffic generator (vote-bot), a web frontend (web), a backend to
+record votes (voting) and an index of gifs (gif).
+
 
 
 `cat emojivoto.yml | conduit inject - > conduit-emojivoto.yml`{{execute}}
