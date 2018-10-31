@@ -24,4 +24,6 @@ To take a look at your new gif voting application, run:
 
 `kubectl -n nodevoto port-forward svc/web-svc 9090:80 > /dev/null &`{{execute}}
 
-Then you can [open nodevoto](https://[[HOST_SUBDOMAIN]]-9091-[[KATACODA_HOST]].environments.katacoda.com/) and see what's going on in your browser. Try clicking on the first gif to vote for it and see what happens!
+Then you can [open nodevoto](https://[[HOST_SUBDOMAIN]]-9091-[[KATACODA_HOST]].environments.katacoda.com/) and see what's going on in your browser. Try clicking on the first gif to vote for it and see what happens (spoiler, it will fail about 50% of the time)!
+
+Let's see how you can use Linkerd to narrow down the root cause from this issue.

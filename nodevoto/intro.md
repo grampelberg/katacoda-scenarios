@@ -1,7 +1,12 @@
-<img align="right" src="https://conduit.io/images/conduit-primary-white.svg" />
+<div style="border-bottom: 1px solid #0a0a0a; padding: 20px;">
+ <img src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" width="40%" />
+ </div>
 
-Conduit has two basic components: a data plane comprised of lightweight proxies, which are deployed as sidecar containers alongside your service code, and a control plane of processes that coordinate and manage these proxies. Humans interact with the service mesh via a command-line interface (CLI) or a web app that you use to control the cluster.
+Linkerd is a service sidecar and service mesh for Kubernetes and other
+frameworks. It makes running your service easier and safer by giving you
+runtime debugging, observability, reliability, and security–all without
+requiring any changes to your code.
 
-In this guide, we’ll walk you through how to deploy Conduit on your Kubernetes cluster, and how to set up a sample gRPC application.
-
-Afterwards, check out the [Using Conduit to debug a service](https://conduit.io/debugging-an-app) page, where we’ll walk you through how to use Conduit to investigate poorly performing services.
+This scenario walks through installing Linkerd on a Kubernetes cluster and using
+it to find the root cause for an intermittent issue in a node.js based gif
+voting microservice.

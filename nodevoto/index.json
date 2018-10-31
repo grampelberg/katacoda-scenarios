@@ -7,19 +7,16 @@
     "steps": [{
       "title": "Step 1 - Install the demo app",
       "code": "foreground.sh",
-      "text": "demo-app.md"
+      "text": "install-nodevoto.md"
     }, {
-      "title": "Step 2 - Setup Conduit CLI",
-      "text": "setup-conduit-cli.md"
+      "title": "Step 2 - Install Linkerd",
+      "text": "install-linkerd.md"
     }, {
-      "title": "Step 3 - Setup Control Plane",
-      "text": "setup-control-plane.md"
+      "title": "Step 3 - Add Linkerd to the demo app",
+      "text": "inject-web.md"
     }, {
-      "title": "Step 4 - Install the demo app",
-      "text": "demo-app.md"
-    }, {
-      "title": "Step 4 - Watch it run",
-      "text": "watch-it-run.md"
+      "title": "Step 4 - Debugging",
+      "text": "debugging.md"
     }],
     "intro": {
       "text": "intro.md",
