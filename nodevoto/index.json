@@ -6,7 +6,6 @@
   "details": {
     "steps": [{
       "title": "Step 1 - Start the app",
-      "code": "foreground.sh",
       "text": "setup-cluster.md"
     }, {
       "title": "Step 2 - Setup Conduit CLI",
