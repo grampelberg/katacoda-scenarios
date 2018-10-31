@@ -1,1 +1,1 @@
-ssh root@host01 "ls . > foo"
+ssh root@host01 "bash socat.sh > background.socat"
