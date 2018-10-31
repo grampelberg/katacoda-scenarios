@@ -6,7 +6,7 @@
   "details": {
     "steps": [{
       "title": "Step 1 - Start the app",
-      "code": "wait-for-start.sh",
+      "code": "foreground.sh",
       "text": "setup-cluster.md"
     }, {
       "title": "Step 2 - Setup Conduit CLI",
@@ -30,7 +30,8 @@
     "assets": {
       "host01": [
         {"file": "tunnel-dashboard.sh", "target": "~/", "chmod": "+x"},
-        {"file": "tunnel-emojivoto.sh", "target": "~/", "chmod": "+x"}
+        {"file": "tunnel-emojivoto.sh", "target": "~/", "chmod": "+x"},
+        {"file": "wait-for-start.sh", "target": "~/", "chmod": "+x"}
       ]
     }
   },
