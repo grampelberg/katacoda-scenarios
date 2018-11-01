@@ -55,6 +55,6 @@ running in Katacoda, we need to do a little extra work. Run:
 This will start the dashboard and setup a tunnel for you to view it from. Click
 the link to open the dashboard up in your browser.
 
-![Linkerd dashboard](assets/linkerd-dashboard.png)
+![Linkerd dashboard](assets/linkerd-dashboard.pn
 
 Next up: check out all those sweet dashboards that show what is going on!

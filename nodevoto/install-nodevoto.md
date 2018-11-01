@@ -15,7 +15,7 @@ Once this has returned, you can look at what is running with:
 
 The topology looks like this:
 
-![nodevoto topology](assets/topology.svg)
+![nodevoto topology](assets/topology.png)
 
 There's a traffic generator (vote-bot), a web frontend (web), a backend to
 record votes (voting) and an index of gifs (gif).
