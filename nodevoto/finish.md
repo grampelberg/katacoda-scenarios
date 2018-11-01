@@ -1,8 +1,7 @@
-That’s it! 👏
+## That’s it! 👏
 
-For more information about Conduit, check out the
-[overview doc](/docs) and the [roadmap doc](/roadmap), or hop into the #conduit channel on [the
-Linkerd Slack](https://slack.linkerd.io) or browse through the
-[Conduit forum](https://discourse.linkerd.io/c/conduit). You can also follow
-[@runconduit](https://twitter.com/runconduit) on Twitter.
+For more things you can do:
 
+- [Add Linkerd to your service](https://linkerd.io/2/adding-your-service)
+- [Learn more](https://linkerd.io/2/architecture) about Linkerd's architecture
+- Hop into the #linkerd2 channel on [the Linkerd Slack](https://slack.linkerd.io)
