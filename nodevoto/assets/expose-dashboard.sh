@@ -15,7 +15,7 @@ if [ $? -ne 0 ]; then
     --pidfile /tmp/dashboard.pid \
     -S \
     --startas /bin/bash \
-    -- -c "exec kubectl -n linkerd port-forward svc/web 9094:8084 &> /root/dashboard.log"
+    -- -c "exec kubectl proxy --accept-hosts="^.*$" --address=0.0.0.0 --port=9092 &> /root/dashboard.log"
 fi
 
 start-stop-daemon --status --pidfile /tmp/ngrok-dashboard.pid
@@ -27,7 +27,7 @@ if [ $? -ne 0 ]; then
     --pidfile /tmp/ngrok-dashboard.pid \
     -S \
     --startas /bin/bash \
-    -- -c "exec /usr/local/bin/ngrok http --log stdout --log-level debug 9094 &> /root/ngrok.log"
+    -- -c "exec /usr/local/bin/ngrok http --log stdout --log-level debug 9092 &> /root/ngrok.log"
   sleep 3
 fi
 
@@ -35,7 +35,7 @@ printf "The dashboard is available at:\n\n"
 
 export DASHBOARD=$(cat ngrok.log \
   | sed -n 's/.* URL:\([^ ]*\) .*/\1/p' \
-  | head -n1)
+  | head -n1)"/api/v1/namespaces/linkerd/services/web:http/proxy/"
 
 echo ${DASHBOARD}
 
