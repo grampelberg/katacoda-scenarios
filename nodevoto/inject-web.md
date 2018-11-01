@@ -5,7 +5,7 @@ Let's add Linkerd to the application:
 This command retrieves the `web` deployment, runs this through `inject` and
 finally reapplies it to the cluster. `inject` augments the resources to include
 the data plane's proxies. As with `install`, `inject` is a pure text operation.
-This means that you can inspect the input and output before you used it. You can
+This means that you can inspect the input and output before you use it. You can
 even run the output through `diff` to see exactly what is changing.
 
 Once piped into `kubectl apply`, Kubernetes will execute a rolling deploy and
