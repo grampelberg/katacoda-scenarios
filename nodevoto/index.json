@@ -15,7 +15,10 @@
       "title": "Step 3 - Add Linkerd to the demo app",
       "text": "inject-web.md"
     }, {
-      "title": "Step 4 - Debugging",
+      "title": "Step 4 - Grafana",
+      "text": "grafana.md"
+    }, {
+      "title": "Step 5 - Debugging",
       "text": "debugging.md"
     }],
     "intro": {
@@ -37,7 +40,8 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [
-      {"name": "nodevoto", "port": 9091}
+      {"name": "nodevoto", "port": 9091},
+      {"name": "grafana", "port": 9093}
     ],
     "uilayout": "terminal",
     "hidefinish": false

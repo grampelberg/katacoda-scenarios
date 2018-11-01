@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [! -f /usr/local/bin/ngrok ]; then
+if [ ! -f /usr/local/bin/ngrok ]; then
   curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip 2> /dev/null \
     | zcat > /usr/local/bin/ngrok \
     && chmod a+x /usr/local/bin/ngrok

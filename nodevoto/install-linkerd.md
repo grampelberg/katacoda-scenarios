@@ -50,9 +50,9 @@ that everything’s happening correctly by running:
 At this point, you'd normally run `linkerd dashboard`. Because this tutorial is
 running in Katacoda, we need to do a little extra work. Run:
 
-`./expose-dashboard.sh`{{execute}}
+`. expose-dashboard.sh`{{execute}}
 
 This will start the dashboard and setup a tunnel for you to view it from. Cut
 and paste the URL that is output into your browser.
 
-Next up: looking at what is going on with the gif voting application!
+Next up: check out all those sweet dashboards that show what is going on!
