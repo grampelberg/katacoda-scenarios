@@ -29,12 +29,12 @@ visibility into what is going wrong to potentially fix the problem.
 
 ![voting failure](assets/outgoing-request.png)
 
-We can go even deeper though! Let's look at the actual requests by tapping them
+Let's look at the actual requests by tapping them
 in real time and looking for failures. Click the microscope icon next to
 `/nodevoto.v1.VotingService/VoteCartoonHalloweenGhost` to see the actual request
 and response details for this interaction.
 
-
+![tap](assets/tap.png)
 
 This is all available via the CLI as well. To see top, you can run:
 
