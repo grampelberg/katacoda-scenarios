@@ -24,10 +24,6 @@ Next, add conduit to your path with:
 
 `export PATH=$PATH:$HOME/.linkerd2/bin`{{execute}}
 
-Verify the CLI is installed and running correctly with:
-
-`linkerd version`{{execute}}
-
 Use the CLI to verify that your cluster is compatible with Linkerd by running:
 
 `linkerd check --pre`{{execute}}
@@ -52,8 +48,9 @@ running in Katacoda, we need to do a little extra work. Run:
 
 `. expose-dashboard.sh`{{execute}}
 
-This will start the dashboard and setup a tunnel for you to view it from. Click
-the link to open the dashboard up in your browser.
+This will start the dashboard and setup a tunnel for you to view it from.
+Copy the link and paste it into your browser. This will pull up the Linkerd
+dashboard for you.
 
 ![Linkerd dashboard](assets/linkerd-dashboard.png)
 

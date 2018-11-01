@@ -7,7 +7,7 @@ and see what's going on in your browser.
 
 ![web dashboard](assets/web-dashboard.png)
 
-At the top of the screen is a dropdown with many different dashboards, take a
+At the top of the screen is a dropdown with many different dashboards. Take a
 look around! Another interesting dashboard is the [top line](https://[[HOST_SUBDOMAIN]]-9093-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/linkerd/services/grafana:http/proxy/d/XKy9QWRmz/linkerd-top-line?refresh=5s&orgId=1) dashboard.
 
 ![top line dashboard](assets/top-line-dashboard.png)

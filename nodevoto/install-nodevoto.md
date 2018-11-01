@@ -2,7 +2,7 @@ To get started, let's install the demo app on your cluster:
 
 `curl https://run.linkerd.io/nodevoto.yml | kubectl apply -f -`{{execute}}
 
-This command fetches the Kubrernetes config for an example application that
+This command fetches the Kubernetes config for an example application that
 allows voting for gifs.
 
 First, let's wait until everything is running. You can do that with:
