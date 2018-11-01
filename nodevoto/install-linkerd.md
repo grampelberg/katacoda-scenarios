@@ -20,7 +20,7 @@ Let's get started by installing the CLI:
 
 `curl https://run.linkerd.io/install | sh`{{execute}}
 
-Next, add conduit to your path with:
+Next, add Linkerd to your path with:
 
 `export PATH=$PATH:$HOME/.linkerd2/bin`{{execute}}
 
