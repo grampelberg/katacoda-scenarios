@@ -6,7 +6,7 @@ are some issues:
 A success rate below 100% isn't good. Let's open the Linkerd dashboard to the
 web's detail view. The URL for that is:
 
-`echo $DASHBOARD/api/v1/namespaces/linkerd/services/web:http/proxy/namespaces/nodevoto/deployments/web`{{execute}}
+`echo $DASHBOARD/namespaces/nodevoto/deployments/web`{{execute}}
 
 Paste this link from the terminal into your browser and you'll see some details.
 This includes incoming requests and outgoing requests.
