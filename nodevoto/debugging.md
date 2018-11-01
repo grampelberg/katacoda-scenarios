@@ -6,7 +6,7 @@ are some issues:
 A success rate below 100% isn't good. Let's open the Linkerd dashboard to the
 web's detail view. The URL for that is:
 
-`echo $DASHBOARD/namespaces/nodevoto/deployments/web`{{execute}}
+`echo ${DASHBOARD}namespaces/nodevoto/deployments/web`{{execute}}
 
 Paste this link from the terminal into your browser and you'll see some details.
 This includes incoming requests and outgoing requests.
@@ -14,7 +14,7 @@ This includes incoming requests and outgoing requests.
 ![web detail](assets/web-detail.png)
 
 Below the traffic diagram is a table. This is `top` for your services and shows
-the requests paths being processed in real time.
+the request paths being processed in real time.
 
 There are two important pieces of data here. The first one is the requests from
 `vote-bot`. The success rate of this path is low and definitely the error that
