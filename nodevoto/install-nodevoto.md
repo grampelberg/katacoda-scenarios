@@ -28,4 +28,6 @@ Then you can [open nodevoto](https://[[HOST_SUBDOMAIN]]-9091-[[KATACODA_HOST]].e
 and see what's going on in your browser. Try clicking on the first gif to vote
 for it and see what happens (spoiler, it will fail about 50% of the time)!
 
+![nodevoto](assets/nodevoto.png)
+
 Let's see how you can use Linkerd to narrow down the root cause from this issue.

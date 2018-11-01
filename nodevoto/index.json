@@ -32,7 +32,9 @@
       "host01": [
         {"file": "expose-dashboard.sh", "target": "~/", "chmod": "+x"},
         {"file": "wait-for-start.sh", "target": "~/", "chmod": "+x"},
-        {"file": "socat.sh", "target": "~/", "chmod": "+x"}
+        {"file": "socat.sh", "target": "~/", "chmod": "+x"},
+        {"file": "expose-grafana.sh", "target": "~/", "chmod": "+x"},
+        {"file": "fix-grafana.yml", "target": "~/", "chmod": "+x"}
       ]
     }
   },
