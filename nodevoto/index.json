@@ -49,5 +49,6 @@
   "backend": {
     "port": 8080,
     "imageid": "kubernetes"
-  }
+  },
+  "embedded_survey_url": "https://linkerd.io/2/katacoda/"
 }

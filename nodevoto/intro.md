@@ -11,4 +11,4 @@ This scenario walks through installing Linkerd on a Kubernetes cluster and using
 it to find the root cause for an intermittent issue in a node.js based gif
 voting microservice.
 
-<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto&step=intro" />
+<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto" />
