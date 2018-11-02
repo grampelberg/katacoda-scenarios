@@ -11,7 +11,8 @@ run Linkerd by:
 
 - Installing the CLI on your local system.
 - Using the CLI to install the control plane into your cluster.
-- Adding Linkerd's data plane to each service you would like.
+- Adding Linkerd's data plane to each service you would like to use with
+  Linkerd.
 
 Take a look at the [architecture documentation](https://linkerd.io/2/architecture/)
 for more details.
@@ -20,7 +21,7 @@ Let's get started by installing the CLI:
 
 `curl https://run.linkerd.io/install | sh`{{execute}}
 
-Next, add Linkerd to your path with:
+Next, add `linkerd` to your path with:
 
 `export PATH=$PATH:$HOME/.linkerd2/bin`{{execute}}
 
