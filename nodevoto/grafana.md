@@ -15,3 +15,5 @@ look around! Another interesting dashboard is the [top line](https://[[HOST_SUBD
 Armed with dashboards, we can see that there are issues with this service.
 Now, we should debug a little bit more and understand what is happening behind
 the scenes.
+
+<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto&step=four" />

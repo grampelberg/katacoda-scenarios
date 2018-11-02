@@ -56,3 +56,5 @@ dashboard for you.
 ![Linkerd dashboard](assets/linkerd-dashboard.png)
 
 Next up: check out all those sweet dashboards that show what is going on!
+
+<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto&step=two" />

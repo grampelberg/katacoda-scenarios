@@ -23,3 +23,5 @@ worked the way it should with the data plane. To do this check, run:
 With the `web` deployment now a part of Linkerd's data plane, the "golden"
 metrics (throughput, success rate and latency) will be collected and visible.
 Let's see what's there next.
+
+<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto&step=three" />
