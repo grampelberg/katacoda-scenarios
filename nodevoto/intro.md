@@ -1,5 +1,5 @@
 <div style="border-bottom: 1px solid #0a0a0a; padding: 20px;">
-  <img src="https://linkerd.io/images/katacoda-nodevoto.png" width="40%" />
+  <img src="https://run.linkerd.io/images/katacoda-nodevoto.png" width="40%" />
 </div>
 
 Linkerd is a service sidecar and service mesh for Kubernetes and other
