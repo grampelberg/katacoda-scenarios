@@ -31,5 +31,3 @@ for it and see what happens (spoiler, it will fail about 50% of the time)!
 ![nodevoto](assets/nodevoto.png)
 
 Let's see how you can use Linkerd to narrow down the root cause from this issue.
-
-<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto&step=one" />

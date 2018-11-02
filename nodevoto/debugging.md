@@ -43,5 +43,3 @@ This is all available via the CLI as well. To see top, you can run:
 For tap, it is:
 
 `linkerd -n nodevoto tap deploy/web`{{execute}}
-
-<img src="https://run.linkerd.io/images/katacoda.png?scenario=nodevoto&step=five" />
