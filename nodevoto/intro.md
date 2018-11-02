@@ -1,8 +1,6 @@
-<script type="text/javascript" async="" src="https://s3.amazonaws.com/ki.js/69049/gp9.js"></script>
-
 <div style="border-bottom: 1px solid #0a0a0a; padding: 20px;">
- <img src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" width="40%" />
- </div>
+  <img src="https://linkerd.io/images/katacoda-nodevoto.png" width="40%" />
+</div>
 
 Linkerd is a service sidecar and service mesh for Kubernetes and other
 frameworks. It makes running your service easier and safer by giving you
