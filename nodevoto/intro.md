@@ -1,3 +1,5 @@
+<script type="text/javascript" async="" src="https://s3.amazonaws.com/ki.js/69049/gp9.js"></script>
+
 <div style="border-bottom: 1px solid #0a0a0a; padding: 20px;">
  <img src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" width="40%" />
  </div>
