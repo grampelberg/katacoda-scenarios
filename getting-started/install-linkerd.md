@@ -27,7 +27,7 @@ that everything’s happening correctly by running:
 
 If you're interested in what components were installed, you can run:
 
-`linkerd -n linkerd get deploy`{{execute}}
+`kubectl -n linkerd get deploy`{{execute}}
 
 With Linkerd installed onto the cluster, the next step will be to explore a
 little and see what is happening.
