@@ -1,6 +1,0 @@
-digraph G {
-  graph [bgcolor="transparent" dpi=300]
-  "vote-bot" -> "web"
-  "web" -> "gif"
-  "web" -> "voting"
-}
