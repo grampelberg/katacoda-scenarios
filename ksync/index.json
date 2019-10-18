@@ -1,0 +1,32 @@
+{
+  "title": "Ksync",
+  "description": "Update containers transparently on a kubernetes cluster",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Setup the cluster",
+      "text": "setup-cluster.md"
+    }, {
+      "title": "Step 2 - Setup ksync",
+      "text": "setup-ksync.md"
+    }, {
+      "title": "Step 3 - Start syncing",
+      "text": "sync.md"
+    }, {
+      "title": "Step 4 - Update the container",
+      "text": "update.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "env-init.sh"
+    }
+  },
+  "files": ["ksync/server.py"],
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
